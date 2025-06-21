@@ -29,7 +29,9 @@ border-radius: 4px;     }
 .subtitle {
 font-weight: bold;
 font-size: 1.5rem;
-background: linear-gradient(to right, #3b9146 60%, #a1a144 40%);
+/* background: linear-gradient(to right, #3b9146 , #a1a144);
+ */
+ background-image: linear-gradient(to right,#3b9146,#a1a144);
 -webkit-background-clip: text; /*clips the gradient to the text shape.*/
 -webkit-text-fill-color: transparent; /*hides the actual text color so only the gradient shows.*/
  }

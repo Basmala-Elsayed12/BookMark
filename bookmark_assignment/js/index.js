@@ -3,6 +3,11 @@ var webSiteUrl = document.getElementById("webSiteUrl");
 var tBody = document.getElementById("tBody");
 var bookMarksArr = [];
 
+function restForm() {
+  bookMarkName.value = "";
+  webSiteUrl.value = "";
+}
+
 if (localStorage.getItem("bookMarks") != null) {
   bookMarksArr = JSON.parse(localStorage.getItem("bookMarks"));
   displayBookMark();
@@ -18,6 +23,7 @@ function createBookMark() {
   localStorage.setItem("bookMarks", JSON.stringify(bookMarksArr));
 
   displayBookMark();
+  restForm();
 }
 
 function displayBookMark() {
